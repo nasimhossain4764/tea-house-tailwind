@@ -10,16 +10,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/fd9c146384.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
-        }
-      </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
-    <h1>hi people</h1>
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28 justify-between">
+        <header class="flex pt-12 mb-20">
+            <!-- Text -->
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold">
+                    Start Your <br>Relaxing Day <br>
+                    with a cup of tea
+                </h1>
+                <br>
+                <p class="text-gray-500 w-3/4">Tea, derived from the Camellia sinensis plant, is one of
+                    the
+                    most widely
+                    consumed beverages globally, second only to water.</p>
+                <br>
+                <button
+                    class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-4 text-white font-bold rounded-lg ">Explore
+                    More
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+            <!-- Image -->
+            <div class="relative">
+                <!-- img -->
+                <div>
+                    <img class="w-full" src="images/banner.png" alt="">
+                </div>
+                <!-- card -->
+                <div
+                    class="flex items-center bg-white shadow-lg rounded-lg px-2 py-2 absolute top-28 md:top-72 md:left-28 lg-left-28">
+                    <!-- icon -->
+                    <div><i class="fa-solid fa-star text-2xl text-yellow-400"></i></div>
+                    <!-- text -->
+                    <div class="ml-2">
+                        <h2 class="lg:text-2xl font-bold">5.00</h2>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+    </main>
 </body>
 
 </html>
